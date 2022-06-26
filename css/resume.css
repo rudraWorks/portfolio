@@ -89,7 +89,10 @@ h2 {
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
   padding-top: 3rem !important;
-  padding-bottom: 5rem !important; }
+  padding-bottom: 5rem !important;
+ 
+}
+
   section.resume-section .resume-item .resume-date {
     min-width: none; }
 
@@ -101,7 +104,7 @@ section.resume-section {
     padding-bottom: 3rem !important; } }  */
 
 .bg-primary {
-  background-color: #BD5D38 !important; }
+  background-color: #191f34 !important; }
 
 .text-primary {
   color: #BD5D38 !important; }
@@ -124,4 +127,7 @@ a {
   #imgContainer{
     justify-content: center;
   }
+}
+#certifications{
+  height: 100vh;
 }
