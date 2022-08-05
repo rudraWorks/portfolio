@@ -132,3 +132,37 @@ a {
 #certifications{
   height: 100vh;
 }
+
+#projects{
+  background-color: rgb(255, 255, 255);
+}
+.projectTypeContainer{
+  background-color: #ced4da;
+  border: 1px dashed black;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 5px;
+}
+.projectTypeContainer>h4{
+  margin:5px;
+}
+.projectType{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projectTypeCard{
+  width: 150px;
+  height: 90px;
+  background-color: #28a745;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+}
