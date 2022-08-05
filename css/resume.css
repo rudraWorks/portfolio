@@ -124,11 +124,7 @@ a {
   padding-bottom: 5rem;
 }
 
-@media (max-width: 992px) {
-  #imgContainer{
-    justify-content: center;
-  }
-}
+
 #certifications{
   height: 100vh;
 }
@@ -165,4 +161,10 @@ a {
   cursor: pointer;
   text-align: center;
   border-radius: 10px;
+}
+
+@media (max-width: 792px) {
+  .projectType{
+    justify-content:space-evenly;
+  }
 }
