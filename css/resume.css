@@ -163,8 +163,8 @@ a {
   border-radius: 10px;
 }
 
-@media (max-width: 792px) {
+@media (max-width: 492px) {
   .projectType{
-    justify-content:space-evenly;
+    justify-content:start;
   }
 }
