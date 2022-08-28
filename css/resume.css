@@ -129,9 +129,9 @@ a {
   height: 100vh;
 }
 
-#projects{
+/* #projects{
   background-color: rgb(255, 255, 255);
-}
+} */
 .projectTypeContainer{
   background-color: #ced4da;
   border: 1px dashed black;
@@ -171,3 +171,4 @@ a {
     /* transform: scale(.7); */
   }
 }
+
