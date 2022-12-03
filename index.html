@@ -118,12 +118,27 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
+              <h3 class="mb-0">Problem Setter Intern</h3>
+              <div class="subheading mb-3">iMocha</div>
+              <p>I create various data structures and algorithms related problems for pre-hire tests.</p>
+
+             
+              <!-- <a href="https://drive.google.com/file/d/14RtD10rgnqRxpSgxttmExequPcnMUzHY/view?usp=sharing" >Work Certificate</a> -->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2022 - Present</span>
+            </div>
+          </div>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
               <h3 class="mb-0">Subject Matter Expert (Computer Science)</h3>
               <div class="subheading mb-3">Chegg</div>
               <p>I provide high quality solution to computer science subjects like DBMS, Data Structure and Algorithms. My overall all Content Feedback (CF) score is above 80%.</p>
 
              
-              <a href="https://drive.google.com/file/d/14RtD10rgnqRxpSgxttmExequPcnMUzHY/view?usp=sharing" >Work Certificate</a>
+              <!-- <a href="https://drive.google.com/file/d/14RtD10rgnqRxpSgxttmExequPcnMUzHY/view?usp=sharing" >Work Certificate</a> -->
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">March 2022 - Present</span>
@@ -135,7 +150,7 @@
               <h3 class="mb-0">Web Developer Intern</h3>
               <div class="subheading mb-3">Internshala</div>
               <p>I interned at Saahi Hain through Internshala. I designed and developed landing page for their website.</p>
-              <a href="https://internshala.com/student/certificate/78921008/4C2BBE68-F493-F0FB-E1B3-8DEA7287F423">Work Certificate</a>
+              <!-- <a href="https://internshala.com/student/certificate/78921008/4C2BBE68-F493-F0FB-E1B3-8DEA7287F423">Work Certificate</a> -->
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">July 2021</span>
@@ -269,23 +284,33 @@
           <h2 class="mb-5">Projects</h2>
               <div class="projectTypeContainer">
                   <h4>Nodejs Projects <hr> </h4>
-                  <div class="projectType">
-                      <div class="projectTypeCard" onclick="location.href='https://typemaster-rp.herokuapp.com/'">
+                      <div class="projectType">
+                        <div class="projectTypeCard" onclick="beSocial()">
+                          <footer>beSocial</footer>
+                      </div>
+
+                      <div class="projectType">
+                        <div class="projectTypeCard" onclick="liveType()">
+                          <footer>liveType</footer>
+                      </div>
+                      
+                      <div class="projectTypeCard" onclick="typemaster()">
                           <footer>Typemaster</footer>
                       </div>
-                      <div class="projectTypeCard" onclick="location.href='https://chatroombyrudra.herokuapp.com/'">
+                      <div class="projectTypeCard" onclick="livechat()">
                           <footer>Live Chat Application</footer>
                       </div>
-                      <div class="projectTypeCard" onclick="location.href='https://bookmazter.herokuapp.com/'">
+                      <div class="projectTypeCard" onclick="bms()">
                           <footer>Book Management System</footer>
                       </div>
-                      <div class="projectTypeCard" onclick="location.href='https://focussed.herokuapp.com/'">
+                      <div class="projectTypeCard" onclick="location.href='https://focussed.onrender.com'">
                           <footer>Focussed</footer>
                       </div>
-                      <div class="projectTypeCard" onclick="location.href='https://my-nodejs-weather-app1.herokuapp.com/'">
+                      <div class="projectTypeCard" onclick="location.href='https://weatherapp-c2ra.onrender.com'">
                           <footer>Weather App</footer>
                       </div>                   
                   </div>     
+              </div>
               </div>
 
               <br>
@@ -393,14 +418,46 @@
       </section>
 
       <section class="resume-section p-3 p-lg-5 flex-column" id="resume">
-        <div class="my-auto">
-          <h2 class="mb-5">Resume</h2>
-          <a class="btn btn-primary" href="https://drive.google.com/file/d/1Die_yd4PtVIQY6nU4SFXktqKxA9r9eIA/view?usp=sharing" target="_blank" role="button">Link</a>
-        </div>
+        <iframe src="https://drive.google.com/file/d/11x-Y323s8SiIGa3QPPEzWP2CO0JM5Ic3/preview" style="width: 100%;height: 500px;" allow="autoplay"></iframe>
       </section>
 
     </div>
 
+      <!-- Button trigger modal -->
+<button id="showModalBtn" type="button" style="display: none;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+
+<!-- Modal -->
+<div  class="modal fade bd-example-modal-xl" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="modalTitle" class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="modalBody" class="modal-body" style="display: flex;flex-direction:column;">
+        <div id="infoContainer" style="display: flex;flex-direction: column; justify-content: space-between;">
+            <div id="imageAndTech" style="display: flex;">
+              <img id="img" style="width: 50%;">
+              <div id="tech" style="margin-left: auto ;margin-right: 30px;"></div>
+            </div>
+             <div id="description">
+        
+             </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="live" class="btn btn-primary">Live</button>
+        <button type="button" id="code" class="btn btn-primary">Code</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -410,6 +467,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.js"></script>
+    <script src="js/modals.js"></script>
+  
 
   </body>
 
