@@ -172,3 +172,10 @@ a {
   }
 }
 
+#hireBanner{
+  display: flex;justify-content: center;align-items: center; background-color: aliceblue; height: 190px; flex-direction: column;border: 1px dashed black; cursor: pointer;
+}
+
+#hireBanner:hover{
+  background-color: rgba(144, 151, 156, 0.788);
+}
